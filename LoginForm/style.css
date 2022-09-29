@@ -123,7 +123,8 @@ body.active {
   font-weight: 500;
 }
 
-.formBx .form form input {
+.formBx .form form input,
+.formBx .form form button {
   width: 100%;
   margin-bottom: 20px;
   padding: 10px;
@@ -132,7 +133,8 @@ body.active {
   border: 1px solid #333;
 }
 
-.formBx .form form input[type="submit"] {
+.formBx .form form input[type="submit"],
+.formBx .form form button {
   background: #03a9f4;
   border: none;
   color: #fff;
@@ -146,6 +148,19 @@ body.active {
 
 .formBx .form form .forgot {
   color: #333;
+}
+
+.formBx .form p {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 1.1em;
+  font-weight: 500;
 }
 
 /* Make it Responsive */
