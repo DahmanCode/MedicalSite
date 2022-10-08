@@ -33,12 +33,6 @@ body {
 
 /* ===== container ===== */
 
-/* .container {
-  background: var(--green-mute);
-  border-radius: 0 0 .5rem .5rem;
-  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.2);
-} */
-
 .heading {
   color: transparent;
   background: var(--gradient);
@@ -214,7 +208,7 @@ section:nth-child(odd) {
 
 /* CONTACT SECTION */
 
-.contact-content {
+/* .contact-content {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
@@ -248,7 +242,7 @@ section:nth-child(odd) {
 .contact form textarea {
   width: 100%;
   padding: 1rem;
-  margin: .7rem 0;
+  margin-bottom: 3.6rem;
   font-size: 1.7rem;
   border: .1rem solid rgba(0, 0, 0, .1);
   border-radius: .5rem;
@@ -269,7 +263,7 @@ section:nth-child(odd) {
 .contact form textarea {
   height: 20rem;
   resize: none;
-}
+} */
 
 /* .contact {
   margin: 0;

@@ -1,3 +1,13 @@
+:root {
+  --blue: #354cce;
+  --green-mute: #00bfa6;
+  --green: #049a18;
+  --black: #192a56;
+  --light-color: #444;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --gradient: linear-gradient(90deg, var(--blue), var(--green-mute));
+}
+
 .container {
   position: fixed;
   top: 0;
@@ -46,11 +56,8 @@ header .logo span {
 }
 
 header .navbar a {
-  /* margin-left: 1rem;
-  font-size: 2rem;
-  color: var(--light-color); */
   font-size: 1.8rem;
-  border-radius: .5rem;
+  border-radius: .2rem;
   padding: .5rem 1rem;
   color: var(--light-color);
 }
@@ -61,26 +68,28 @@ header .navbar a:hover {
   background: var(--green-mute);
 }
 
-/* header .signin {
-  position: absolute;
-  width: 100px;
-  height: 40px;
-  top: 50%;
-  right: 80px;
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #0394f5;
-} */
-
-/* header .signin a {
-  color: #fff;
-  font-size: 18px;
-} */
-
 header .icons {
   display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+header .icons a.MemberBtn {
+  margin-right: 5rem;
+  font-size: 1.8rem;
+  border-radius: .2rem;
+  padding: .5rem 1rem;
+  background: var(--blue);
+  color: #fff;
+}
+
+header .icons a.MemberBtn:hover {
+  background: linear-gradient(
+    to left,
+    #6af5a4,
+    #57f7ef
+  );
+  color: var(--light-color);
 }
 
 header .icons i {
@@ -217,9 +226,13 @@ header .icons #menu-bars {
   .home {
     margin-top: 5rem;
   }
+
+  header .icons a.MemberBtn {
+    margin-right: 0rem;
+  }
 }
 
-@media (max-width:320px) {
+@media (max-width:375px) {
 
   header .logo img {
     width: 8.5rem;
