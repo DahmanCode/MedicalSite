@@ -134,14 +134,7 @@ section {
     height: 100rem;
     margin-top: 5rem;
   }
-
-  header .logo {
-    margin-left: 4rem;
-  }
-
-  header .logo div {
-    font-size: 2rem;
-  }
+  
   .contact form .inputBx input {
     width: 100%;
   }

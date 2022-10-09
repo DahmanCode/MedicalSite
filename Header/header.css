@@ -232,15 +232,32 @@ header .icons #menu-bars {
   }
 }
 
-@media (max-width:375px) {
+@media (max-width:425px) {
 
   header .logo img {
-    width: 8.5rem;
-    left: -35%;
+    width: 7.5rem;
+    left: -45%;
   }
 
   header .logo div {
     font-size: 1.6rem;
-    margin-left: 2rem;
+    margin-left: .8rem;
+    letter-spacing: -.09rem;
+  }
+
+  header .icons {
+    margin-right: -2.2rem;
+  }
+
+  header .icons a.MemberBtn {
+    font-size: 1.8rem;
+  }
+
+  header .icons i {
+    margin-left: 1rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.5rem;
   }
 }
