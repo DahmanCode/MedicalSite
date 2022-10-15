@@ -75,7 +75,7 @@ header .icons {
 }
 
 header .icons a.MemberBtn {
-  margin-right: 5rem;
+  /* margin-right: 5rem; */
   font-size: 1.8rem;
   border-radius: .2rem;
   padding: .5rem 1rem;
@@ -148,14 +148,11 @@ header .icons #menu-bars {
   color: #eee;
 }
 
-#search-form #search-box::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-}
-
 #search-form label {
   color: #fff;
   cursor: pointer;
   font-size: 24px;
+  margin-left: 5px;
 }
 
 #search-form label:hover {

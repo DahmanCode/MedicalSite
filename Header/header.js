@@ -22,8 +22,8 @@ let section = document.querySelectorAll('section')
 let navLinks = document.querySelectorAll('header .navbar a')
 
 window.onscroll = () => {
-  menu.classList.remove('fa-times')
-  navbar.classList.remove('active')
+  menu.classList.remove('fa-times');
+  navbar.classList.remove('active');
 
   // section.forEach((sec) => {
   //   let top = window.scrollY
@@ -41,3 +41,11 @@ window.onscroll = () => {
   //   }
   // })
 }
+
+// navLinks.forEach((links) => {
+//   links.classList.remove('active');
+//   links
+//     .addEventListener("click", () => {
+//       document.classList.add('active');
+//     })
+// })
