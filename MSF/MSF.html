@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="MSF.css" />
     <link rel="stylesheet" href="../Header/header.css" />
     <!-- <link rel="stylesheet" href="./PDF/pdf.css" /> -->
@@ -12,22 +15,21 @@
     <title>Membership in office Students Activites</title>
   </head>
   <body>
-
     <div class="container">
       <header>
         <a href="#" class="logo">
-        <img src="/images/ispitsg.png" class="logo-img" alt="ispits logo">
-        <div>
-          <p>Students<span> Activites</span></p>
-          <p>Office <span>ISPITSG</span></p>
-        </div>
+          <img src="/images/ispitsg.png" class="logo-img" alt="ispits logo" />
+          <div>
+            <p>Students<span> Activites</span></p>
+            <p>Office <span>ISPITSG</span></p>
+          </div>
         </a>
         <nav class="navbar">
           <a href="../index.html" class="active">Home</a>
           <a href="../library/library.html">library</a>
           <a href="../team/team.html">team</a>
           <a href="../parascolaire/Parascolaire.html">parascolaire</a>
-          <a href="#Contact">Contact nous</a>
+          <a href="../contact/contact.html">Contact nous</a>
         </nav>
         <div class="icons">
           <i class="fas fa-search" id="search-icon"></i>
@@ -36,7 +38,12 @@
       </header>
     </div>
     <form action="" id="search-form">
-      <input type="search" placeholder="Search Here ..." name="" id="search-box"/>
+      <input
+        type="search"
+        placeholder="Search Here ..."
+        name=""
+        id="search-box"
+      />
       <label for="search-box" class="fas fa-search"></label>
       <i class="fas fa-times" id="close"></i>
     </form>
@@ -49,40 +56,50 @@
         <div class="inputBox">
           <div class="input">
             <span>nom</span>
-            <input type="text" placeholder="nom" class="name"/>
+            <input type="text" placeholder="nom" class="name" />
           </div>
           <div class="input">
             <span>prenom</span>
-            <input type="text" placeholder="prenom" class="lastname"/>
+            <input type="text" placeholder="prenom" class="lastname" />
           </div>
           <div class="input">
             <span>telephone</span>
-            <input type="number" placeholder="00-00-00-00-00" class="tel"/>
+            <input type="number" placeholder="00-00-00-00-00" class="tel" />
           </div>
           <div class="input">
             <span>Email address</span>
-            <input type="text" placeholder="example@gmail.com" class="address"/>
+            <input
+              type="text"
+              placeholder="example@gmail.com"
+              class="address"
+            />
           </div>
           <div class="input">
             <span>lieu de naissance</span>
-            <input type="text" placeholder="ecrivez votre ville" class="place"/>
+            <input
+              type="text"
+              placeholder="ecrivez votre ville"
+              class="place"
+            />
           </div>
           <div class="input">
             <span>Date de naissance</span>
-            <input type="date" class="date"/>
+            <input type="date" class="date" />
           </div>
           <div class="input">
             <span>adresse postale</span>
-            <input type="text" placeholder="ecrivez code" class="addressP"/>
+            <input type="text" placeholder="ecrivez code" class="addressP" />
           </div>
           <div class="input">
             <span>CNIE</span>
-            <input type="text" placeholder="ecrivez votre CNIE" class="cnie"/>
+            <input type="text" placeholder="ecrivez votre CNIE" class="cnie" />
           </div>
           <div class="input">
             <span>quelle sont les activites que vous aimez?</span>
             <select name="" class="activites">
-              <option value="journee scientifique" selected>journee scientifique</option>
+              <option value="journee scientifique" selected>
+                journee scientifique
+              </option>
               <option value="voyage organise">voyage organise</option>
               <option value="ceremoine d'honneur">ceremoine d'honneur</option>
               <option value="tournoi sportif">tournoi sportif</option>
@@ -91,7 +108,11 @@
           </div>
           <div class="input">
             <span>si cliquez sur autre</span>
-            <input type="text" placeholder="Qu'est-ce que tu aimes?" class="OActivites"/>
+            <input
+              type="text"
+              placeholder="Qu'est-ce que tu aimes?"
+              class="OActivites"
+            />
           </div>
           <div class="input">
             <span>votre semister</span>
@@ -110,13 +131,18 @@
             </select>
           </div>
         </div>
-        <input type="submit" value="send" class="btn" id="send" onclick="showPDF()"/>
-        <input type="submit" value="print" class="btn"/>
+        <input
+          type="submit"
+          value="send"
+          class="btn"
+          id="send"
+          onclick="showPDF()"
+        />
+        <input type="submit" value="print" class="btn" />
       </form>
     </section>
 
     <script src="MSF.js"></script>
     <script src="../Header/header.js"></script>
-    
   </body>
 </html>

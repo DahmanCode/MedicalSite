@@ -34,6 +34,10 @@ body {
 /* ===== Parascolaire Style ===== */
 
 section {
+  padding: 3rem 9%;
+}
+
+.parascolaire {
   height: 50vh;
   display: flex;
   align-items: center;

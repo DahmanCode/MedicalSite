@@ -34,6 +34,10 @@ body {
 /* ===== Team Style ===== */
 
 section {
+  padding: 3rem 9%;
+}
+
+.team {
   height: 50vh;
   display: flex;
   align-items: center;
