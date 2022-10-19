@@ -206,139 +206,29 @@ section:nth-child(odd) {
   opacity: 0.4;
 }
 
-/* CONTACT SECTION */
-
-/* .contact-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+.vision {
+  background-color: var(--green-mute);
 }
 
-.contact .image {
-  flex: 1 1 35rem;
-  display: flex;
-  align-items: center;
+.vision .content {
+  padding: 4rem 0;
+  text-align: center;
 }
 
-.contact .image img {
-  width: 100%;
-}
-
-.contact form {
-  flex: 1 1 50rem;
-  border: .1rem solid var(--green-mute);
-  border-radius: .5rem;
-  padding: 2rem;
-}
-
-.contact form .inputBx {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.contact form .inputBx input,
-.contact form .box,
-.contact form textarea {
-  width: 100%;
-  padding: 1rem;
-  margin-bottom: 3.6rem;
-  font-size: 1.7rem;
-  border: .1rem solid rgba(0, 0, 0, .1);
-  border-radius: .5rem;
-  text-transform: none;
-  color: #333;
-}
-
-.contact form .inputBx input:focus,
-.contact form .box:focus,
-.contact form textarea:focus {
-  border-color: var(--blue);
-}
-
-.contact form .inputBx input {
-  width: 49%;
-}
-
-.contact form textarea {
-  height: 20rem;
-  resize: none;
-} */
-
-/* .contact {
-  margin: 0;
+.vision .content .heading {
   padding: 0;
-  position: relative;
-  width: 100%;
-  display: flex;
+  padding-bottom: 1rem;
+  font-size: 5rem;
+  font-weight: 600;
+  color: #f9f9f9;
 }
 
-.contact .contentBx {
-  padding: 120px;
-  width: 50%;
-}
-
-.contact .imgBx {
-  background: url(./images/medi.png);
-  width: 50%;
-  background-size: cover;
-  background-position: center;
-}
-
-.redbr {
-  background: url(./images/red.png) #51d8cd;
-  width: 50%;
-}
-
-.form .inputBx {
-  margin-bottom: 40px;
-}
-
-.form .inputBx input {
-  width: 100%;
-  background: transparent;
-  box-shadow: none;
-  border: none;
-  outline: none;
-  padding: 10px 0;
-  font-size: 18px;
+.vision .content .main {
+  color: #f9f9f9;
   font-weight: 300;
-  color: #ffffff;
-  border-bottom: 2px solid #ffffff;
+  font-size: 2rem;
+  text-shadow: 0px 0px 100px rgb(0 0 0 / 60%);
 }
-
-.form .inputBx input::placeholder {
-  color: #ffffff;
-}
-
-.form .inputBx textarea {
-  width: 100%;
-  background: transparent;
-  box-shadow: none;
-  border: none;
-  outline: none;
-  padding: 10px 0;
-  font-size: 18px;
-  font-weight: 300;
-  color: #ffffff;
-  min-height: 150px;
-  border-bottom: 2px solid #ffffff;
-}
-
-.form .inputBx textarea::placeholder {
-  color: #ffffff;
-}
-
-.form .inputBx input[type='submit'] {
-  width: 150px;
-  background: #ffffff;
-  color: #111;
-  cursor: pointer;
-  font-weight: 400;
-} */
-
-
-
 
 
 

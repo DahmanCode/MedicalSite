@@ -8,3 +8,59 @@
   --light-color: #444;
   --gradient: linear-gradient(90deg, var(--blue), var(--green-mute) )
 }
+
+.footer {
+  padding-bottom: 2rem;
+}
+
+.footer .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 2rem;
+}
+
+.footer .box-container .box {
+  flex: 1 1 20rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: var(--blue);
+  padding: .7rem 0;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  color: #666;
+  padding: .7rem 0;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.5rem;
+  color: #666;
+  padding: .7rem 0;
+}
+
+.footer .box-container .box a:hover {
+  color: var(--green-mute);
+}
+
+.footer .box-container .box p i {
+  padding-right: .5rem;
+  color: var(--green-mute);
+}
+
+.footer .credit {
+  font-size: 2rem;
+  margin-top: 1rem;
+  padding-top: 2rem;
+  text-align: center;
+  border-top: .1rem solid rgba(0, 0, 0, .1);
+  color: #666;
+}
+
+.footer .credit span {
+  color: var(--green-mute);
+}
