@@ -54,75 +54,143 @@ html {
 }
 
 section {
-  padding: 8rem 9%;
+  padding: 8rem;
 }
-
-section:nth-child(even) {
-  background: #eee;
-}
-
-/* ===== LIBRARY STYLE ===== */
 
 .library {
-  padding: 0 8%;
-  padding-bottom: 8rem;
+  /* padding-top: 20rem; */
+  height: 100vh;
 }
 
-.library .box-container {
+.library .programme {
+  /* outline: none; */
+  display: flex;
+  flex-direction: row;
+  /* border: .1rem solid #00bfa6; */
+  justify-content: space-between;
+  gap: 5rem;
+  margin-top: 8rem;
+}
+
+.library .programme .right {
+  position: relative;
+  padding: 0 auto;
+  /* border: .1rem solid #00bfa6; */
+  position: sticky;
+  display: block;
+  align-items: center;
+}
+
+.library .programme .right button {
+  width: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  color: var(--blue);
+  border: .1rem solid #00bfa6;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.library .programme .right button:hover {
+  color: #ffffff;
+  background: var(--gradient);
+  border: none;
+}
+
+.library .programme .left {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  justify-content: space-between;
+  border: .1rem solid #00bfa6;
 }
 
-.library .box-container .box {
-  flex: 1 1 43rem;
-  border-radius: .5rem;
-  box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.2);
-  border: .1rem solid rgba(0, 0, 0, .1);
-  position: relative;
-  /* padding: 1rem; */
-  /* overflow: hidden; */
-}
-
-.library .box img {
-  height: auto;
-  width: 100%;
-  /* object-fit: cover; */
-}
-
-.library .box:hover {
-  box-shadow: none;
-}
-
-.library .box .content {
-  padding: 1rem;
-}
-
-.library .box h1 {
-  font-size: 2.5rem;
-  color: var(--blue);
-}
-
-.library .box p {
-  font-size: 1.5rem;
-  padding: .5rem 0;
-}
-
-.library .box .image a:hover {
-  letter-spacing: 2px;
-}
-
-.library .box .image::before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  background-color: var(--blue);
+.library .programme .left .heading {
   position: absolute;
-  top: -2px;
-  opacity: 0;
-  transition: 0.5s;
+  width: 100%;
+  top: -5rem;
+  left: 50%;
+  transform: translate(-50%);
+  color: var(--green-mute);
 }
 
-.library .box .image:hover::before {
-  opacity: 0.4;
+.library .programme .left .side {
+  margin-top: 10rem;
+  width: 49%;
+}
+
+.library .programme .wrapper {
+  position: relative;
+}
+
+.library .programme .wrapper .toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: .1px solid rgba(0, 0, 0, 0.10);
+  transition: all .1s ease;
+  outline: none;
+  cursor: pointer;
+}
+
+.library .programme .wrapper .toggle.active {
+  box-shadow: 0px 0px 25px 0px rgb(0 0 0 / 10%);
+  border: none;
+}
+
+.library .programme .wrapper .toggle::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  bottom: 30px;
+  border-left: .2rem solid var(--green-mute);
+  transition: all .5s ease;
+}
+
+.library .programme .wrapper .toggle.active::before {
+  bottom: 5px;
+}
+
+.library .programme .content {
+  position: relative;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 30px;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.library .programme .content p {
+  color: var(--light-color);
+}
+
+.library .programme .optionTow {
+  display: none;
+}
+
+.library .programme .optionthree {
+  display: none;
+}
+
+.library .programme .optionTow.active {
+  display: flex;
+}
+
+.library .programme .optionOne.active {
+  display: none;
 }
