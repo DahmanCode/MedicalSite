@@ -3,6 +3,16 @@ let content = document.getElementsByClassName('content');
 let icons = document.getElementsByClassName('icon');
 let wrappers = document.getElementsByClassName('wrapper');
 
+// active first toggle and showing ther content by default
+
+content[0].style.height = content[0].scrollHeight + "px";
+toggles[0].style.color = "#00bfa6";
+icons[0].classList.remove('fa-plus');
+icons[0].classList.add('fa-minus');
+toggles[0].classList.add('active');
+
+// active and disactive toggles
+
 for (let i=0; i<toggles.length; i++) {
   toggles[i].addEventListener('click', () => {
     if (parseInt(content[i].style.height) != content[i].scrollHeight) {
@@ -49,16 +59,19 @@ const therdBtn = document.querySelector('.btnThree');
 // }
 
 firstBtn.onclick = () => {
-  second.classList.remove('active');
   first.classList.remove('active');
+  second.classList.remove('active');
+  therd.classList.remove('active');
 }
 
 secondBtn.onclick = () => {
-  second.classList.add('active');
   first.classList.add('active');
+  second.classList.add('active');
+  therd.classList.remove('active');
 }
 
-secondBtn.onclick = () => {
-  second.classList.add('active');
+therdBtn.onclick = () => {
   first.classList.add('active');
+  second.classList.remove('active');
+  therd.classList.add('active');
 }

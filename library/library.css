@@ -27,6 +27,10 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  background-color: rgba(0, 191, 166, 5%);
+}
+
 .heading {
   color: transparent;
   background: var(--gradient);
@@ -64,25 +68,43 @@ section {
 
 .library .programme {
   /* outline: none; */
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
   /* border: .1rem solid #00bfa6; */
+  margin-top: 4rem;
+  display: flex;
   justify-content: space-between;
-  gap: 5rem;
-  margin-top: 8rem;
 }
 
 .library .programme .right {
   position: relative;
-  padding: 0 auto;
+  width: 30%;
+  height: 50%;
+  display: grid;
+  place-items: center;
   /* border: .1rem solid #00bfa6; */
-  position: sticky;
-  display: block;
-  align-items: center;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.library .programme .left {
+  width: 68%;
+}
+
+/* .library .programme .right,
+.library .programme .left {
+  flex: 1 1 40rem;
+} */
+
+.library .programme .right h4 {
+  color: var(--green-mute);
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 3rem;
 }
 
 .library .programme .right button {
-  width: 30rem;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,15 +112,15 @@ section {
   padding: 1rem 2rem;
   margin-bottom: 2rem;
   color: var(--blue);
-  border: .1rem solid #00bfa6;
   cursor: pointer;
+  border: .1px solid rgba(0, 0, 0, 0.10);
   border-radius: 5px;
-  background-color: transparent;
+  background-color: #fff;
 }
 
 .library .programme .right button:hover {
   color: #ffffff;
-  background: var(--gradient);
+  background: var(--blue);
   border: none;
 }
 
@@ -106,22 +128,36 @@ section {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  border: .1rem solid #00bfa6;
+  justify-content: center;
+  /* border: .1rem solid #00bfa6; */
+  border-radius: 5px;
+  background-color: #fff;
 }
 
 .library .programme .left .heading {
+  margin-top: 30px;
   position: absolute;
   width: 100%;
   top: -5rem;
   left: 50%;
+  font-size: 3rem;
   transform: translate(-50%);
   color: var(--green-mute);
 }
 
+.library .programme .left .heading::after {
+  position: absolute;
+  content: "";
+  border-top: .1rem solid var(--green-mute);
+  width: 80%;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
 .library .programme .left .side {
-  margin-top: 10rem;
-  width: 49%;
+  margin: 15rem 1rem 0;
+  width: 46%;
 }
 
 .library .programme .wrapper {
@@ -183,8 +219,12 @@ section {
   display: none;
 }
 
-.library .programme .optionthree {
+.library .programme .optionThree {
   display: none;
+}
+
+.library .programme .optionThree.active {
+  display: flex;
 }
 
 .library .programme .optionTow.active {
