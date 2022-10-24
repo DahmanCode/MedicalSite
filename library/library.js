@@ -50,28 +50,30 @@ const firstBtn = document.querySelector('.btnOne');
 const secondBtn = document.querySelector('.btnTow');
 const therdBtn = document.querySelector('.btnThree');
 
-// function display() {
-//   document.getElementsByClassName('optionOne')
-//   .style.display = "none";
-
-//   document.getElementsByClassName('optionTow')
-//   .style.display = "flex";
-// }
 
 firstBtn.onclick = () => {
   first.classList.remove('active');
   second.classList.remove('active');
   therd.classList.remove('active');
+  firstBtn.classList.add('active');
+  secondBtn.classList.remove('active');
+  therdBtn.classList.remove('active');
 }
 
 secondBtn.onclick = () => {
   first.classList.add('active');
   second.classList.add('active');
   therd.classList.remove('active');
+  firstBtn.classList.remove('active');
+  secondBtn.classList.add('active');
+  therdBtn.classList.remove('active');
 }
 
 therdBtn.onclick = () => {
   first.classList.add('active');
   second.classList.remove('active');
   therd.classList.add('active');
+  firstBtn.classList.remove('active');
+  secondBtn.classList.remove('active');
+  therdBtn.classList.add('active');
 }

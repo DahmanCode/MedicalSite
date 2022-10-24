@@ -117,6 +117,12 @@ section {
   background-color: #fff;
 }
 
+.library .programme .right button.active {
+  color: #ffffff;
+  background: var(--blue);
+  border: none;
+}
+
 .library .programme .right button:hover {
   color: #ffffff;
   background: var(--blue);
