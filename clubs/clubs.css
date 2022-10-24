@@ -48,64 +48,65 @@ body {
   background: var(--gradient);
 }
 
-/* ===== sportif ===== */
+/* ===== club ===== */
 
 section {
   margin-top: 8rem;
 }
 
-.sportif .content {
+.club .content {
   position: relative;
 }
 
-.sportif .content .header {
+.club .content .header {
   padding: 14rem 0;
   background-color: var(--blue);
 }
 
-.sportif .content .header .links {
+.club .content .header .links {
   padding-left: 10%;
   margin-top: -10rem;
 }
 
-.sportif .content .header a {
+.club .content .header a {
   font-size: 1.6rem;
   font-weight: 600;
   color: var(--black);
   cursor: pointer;
 }
 
-.sportif .content .header a:hover {
+.club .content .header a:hover {
   color: black;
 }
 
-.sportif .content .header h1{
+.club .content .header h1{
   text-align: center;
   text-transform: uppercase;
   font-size: 6rem;
   color: #fff;
   padding-left: 25%;
   margin-top: 4rem;
+  letter-spacing: 4px;
 }
 
-.sportif .content .image {
+.club .content .image {
   position: relative;
   width: 60rem;
 }
 
-.sportif .content .image img {
+.club .content .image img {
   width: 100%;
   position: absolute;
   top: -24rem;
   left: 20%;
 }
 
-.sportif .content .description {
+.club .content .description {
   display: grid;
   place-items: center;
 }
 
-.sportif .content .description h2 {
+.club .content .description h2 {
   color: var(--green-mute);
   margin: 6rem 0;
   padding-left: 25%;
@@ -113,7 +114,7 @@ section {
   font-size: 5rem;
 }
 
-.sportif .content .description p {
+.club .content .description p {
   font-size: 2.5rem;
   letter-spacing: 2px;
   line-height: 5rem;
@@ -121,7 +122,7 @@ section {
   width: 70%;
 }
 
-.sportif .content .description p::first-letter {
+.club .content .description p::first-letter {
   padding-left: 5rem;
 }
 
@@ -132,56 +133,56 @@ section {
 /* media queries */
 
 @media (max-width:1440px) {
-  .sportif .content .header h1{
+  .club .content .header h1{
     padding-left: 45%;
   }
 
-  .sportif .content .image img {
+  .club .content .image img {
     left: 10%;
   }
 }
 
 @media (max-width:1024px) {
-  .sportif .content .header h1{
+  .club .content .header h1{
     margin-top: 6rem;    
   }
 
-  .sportif .content .image {
+  .club .content .image {
     width: 50rem;
   }
   
-  .sportif .content .description h2 {
+  .club .content .description h2 {
     margin: 4rem 0;
     padding-left: 38%;
   }
 }
 
 @media (max-width:768px) {
-  .sportif .content .header h1{
+  .club .content .header h1{
     margin-top: 2rem;
     padding-left: 0;
   }
 
-  .sportif .content .image {
+  .club .content .image {
     width: 100%;
   }
 
-  .sportif .content .image img {
+  .club .content .image img {
     width: 70%;
     left: 50%;
     top: -10rem;
     transform: translate(-50%);
   }
 
-  .sportif .content .description {
+  .club .content .description {
     margin-top: 32rem;
   }
 
-  .sportif .content .description h2 {
+  .club .content .description h2 {
     padding-left: 0;
   }
 
-  .sportif .content .description p {
+  .club .content .description p {
     width: 85%;
   }
 }
@@ -191,23 +192,23 @@ section {
     margin-top: 6rem;
   }
 
-  .sportif .content .header h1{
+  .club .content .header h1{
     font-size: 5rem;
   }
 
-  .sportif .content .image img {
+  .club .content .image img {
     width: 85%;
   }
 
-  .sportif .content .description {
+  .club .content .description {
     margin-top: 18rem;
   }
   
-  .sportif .content .description h2 {
+  .club .content .description h2 {
     font-size: 3.5rem;
   }
 
-  .sportif .content .description p {
+  .club .content .description p {
     font-size: 1.8rem;
   letter-spacing: 1.4px;
   line-height: 4rem;
