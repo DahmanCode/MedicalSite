@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/footer/footer.css" />
     <title>Home - Students Activites Office</title>
   </head>
-  <body>
+  <body data-container>
     <div class="container">
       <header>
         <a href="index.html" class="logo">
@@ -44,8 +44,9 @@
         placeholder="Search Here ..."
         name=""
         id="search-box"
+        data-search
       />
-      <label for="search-box" class="fas fa-search"></label>
+      <label for="search-box" class="fas fa-search" onclick="search()"></label>
       <i class="fas fa-times" id="close"></i>
     </form>
     <!-- ===== HOME ===== -->

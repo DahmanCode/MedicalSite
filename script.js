@@ -1,19 +1,26 @@
-// let menu = document.querySelector('#menu-bars');
-// let navbar = document.querySelector('.navbar');
+// const body = document.querySelector("[data-container]");
+// const searchInput = document.querySelector("[data-search]");
+// let content = [];
 
-// menu.onclick = () => {
-//   menu.classList.toggle('fa-times');
-//   navbar.classList.toggle('active');
-// }
+// searchInput.addEventListener("input", e => {
+//   const value = e.target.value;
+//   console.log(value);
+// })
 
-// window.onscroll = () => {
-//   menu.classList.remove('fa-times');
-//   navbar.classList.remove('active');
-// }
+// const search = body.textContent;
 
-// document.querySelector('#search-icon').onclick = () => {
-//   document.querySelector('#search-form').classList.toggle('active');
-// }
-// document.querySelector('#close').onclick = () => {
-//   document.querySelector('#search-form').classList.remove('active');
-// }
+// console.log(search);
+
+function search() {
+  let textToSearch = document.getElementById("search-box").value;
+  let paragraph = document.getElementsByClassName("paragraph");
+  content.classList.add("paragraph");
+  
+  textToSearch = textToSearch.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+  let pattern = new RegExp(`${textToSearch}`,"gi");
+  
+  paragraph.innerHTML = paragraph.textContent.replace(pattern, match => `<mark>${match}</mark>`)
+}
+
+let content = document.getElementsByTagName("p").textContent;
+console.log(content);
