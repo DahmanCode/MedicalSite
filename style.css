@@ -62,7 +62,7 @@ body {
 /* ===== HOME ===== */
 
 section {
-  padding: 3rem 9%;
+  padding: 1rem 2%;
 }
 
 .home {
@@ -148,14 +148,14 @@ section {
 }
 
 .programs .box-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4.5rem;
-  margin: 0 1.5rem;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+  gap: 5rem;
+  margin: 0 4rem;
 }
 
 .programs .box-container .box {
-  flex: 1 1 40rem;
   border-radius: .5rem;
   box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.2);
   border: .1rem solid rgba(0, 0, 0, .1);
@@ -251,6 +251,13 @@ section {
 }
 
 @media (max-width:425px) {
+  .programs .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4.5rem;
+    margin: 0 1.5rem;
+  }
+
   .vision .content .heading {
     font-size: 4rem;
   }
