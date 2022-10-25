@@ -9,15 +9,11 @@
   --gradient: linear-gradient(90deg, var(--blue), var(--green-mute) )
 }
 
-.footer {
-  padding-bottom: 2rem;
-}
-
 .footer .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 8rem;
-  padding-top: 2rem;
+  padding: 2rem 2%;
 }
 
 .footer .box-container .box {
@@ -55,7 +51,7 @@
 .footer .credit {
   font-size: 2rem;
   margin-top: 1rem;
-  padding-top: 2rem;
+  padding: 2rem;
   text-align: center;
   border-top: .1rem solid rgba(0, 0, 0, .1);
   color: #666;

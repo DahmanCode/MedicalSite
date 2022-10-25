@@ -59,14 +59,13 @@ body {
   background: var(--gradient);
 }
 
-section {
+/* CONTACT SECTION */
+
+.contact {
   padding: 8rem 9%;
 }
 
-
-/* CONTACT SECTION */
-
-.contact-content {
+.contact .contact-content {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;

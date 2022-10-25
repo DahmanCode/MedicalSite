@@ -65,6 +65,10 @@ section {
   padding: 1rem 2%;
 }
 
+section:last-of-type {
+  padding: 0;
+}
+
 .home {
   height: 85rem;
   display: flex;
