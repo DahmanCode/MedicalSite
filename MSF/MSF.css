@@ -122,10 +122,6 @@ body {
   margin-top: 0;
 }
 
-.Membership form > input:last-child {
-  margin-left: 2rem;
-}
-
 /* ===== PDF ===== */
 
 .container_pdf {

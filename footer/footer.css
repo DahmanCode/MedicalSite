@@ -9,6 +9,10 @@
   --gradient: linear-gradient(90deg, var(--blue), var(--green-mute) )
 }
 
+.footer {
+  background-color: rgba(0, 191, 166, 5%);
+}
+
 .footer .box-container {
   display: flex;
   flex-wrap: wrap;
@@ -50,11 +54,12 @@
 }
 
 .footer .credit {
+  background-color: rgba(53, 76, 206, .1);
   font-size: 2rem;
   margin-top: 1rem;
   padding: 2rem;
   text-align: center;
-  border-top: .1rem solid rgba(0, 0, 0, .1);
+  /* border-top: .1rem solid rgba(0, 0, 0, .1); */
   color: #666;
 }
 
