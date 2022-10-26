@@ -12,7 +12,8 @@
 .footer .box-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 8rem;
+  gap: 6rem;
+  row-gap: 2rem;
   padding: 2rem 2%;
 }
 

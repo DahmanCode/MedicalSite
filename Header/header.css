@@ -204,11 +204,17 @@ header .icons #menu-bars {
   header .logo {
     margin-left: 4rem;
   }
-  
-  header .logo div {
-    font-size: 2rem;
+
+  header .logo img {
+    width: 8rem;
+    left: -50%;
   }
 
+  header .logo div {
+    font-size: 1.4rem;
+    margin-left: .2rem;
+  }
+  
   .home {
     margin-top: 5rem;
   }
@@ -218,7 +224,7 @@ header .icons #menu-bars {
   }
 }
 
-@media (max-width:425px) {
+@media (max-width:432px) {
 
   header .logo img {
     width: 7.5rem;

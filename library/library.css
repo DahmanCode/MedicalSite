@@ -57,11 +57,8 @@ body {
   background: var(--gradient);
 }
 
-section {
-  padding: 4rem;
-}
-
 .library {
+  padding: 4rem;
   padding-top: 8rem;
 }
 
@@ -239,6 +236,12 @@ section {
   display: none;
 }
 
+.footer {
+  background-color: #ffffff;
+}
+
+/* media queries */
+
 @media (max-width:768px) {
   .library .programme .left .side {
     width: 90%;
@@ -246,6 +249,35 @@ section {
 
   .library .programme .left .side.Tow {
     margin-top: 0;
+  }
+
+  .library .heading h2 {
+    font-size: 4rem;
+  }
+
+  .library .programme {
+    flex-direction: column;
+  }
+
+  .library .programme .right {
+    margin-bottom: 5rem;
+  }
+
+  .library .programme .right,
+  .library .programme .left {
+    width: 100%;
+  }
+
+  /* .library .programme .optionTow .One {
+    margin-bottom: 20rem;
+  } */
+
+  .library .programme .left .heading::after {
+    top: 85%;
+  }
+
+  .library .programme .left.optionTow .side.One {
+    margin-top: 22rem;
   }
 }
 
