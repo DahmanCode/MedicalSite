@@ -211,8 +211,9 @@ header .icons #menu-bars {
   }
 
   header .logo div {
-    font-size: 1.4rem;
-    margin-left: .2rem;
+    font-size: 1.6rem;
+    margin-left: 0rem;
+    margin-top: 0.5rem;
   }
   
   .home {
@@ -228,13 +229,13 @@ header .icons #menu-bars {
 
   header .logo img {
     width: 7.5rem;
-    left: -45%;
+    left: -50%;
   }
 
   header .logo div {
-    font-size: 1.6rem;
-    margin-left: .8rem;
-    letter-spacing: -.09rem;
+    font-size: 1.4rem;
+    margin-left: .2rem;
+    /* letter-spacing: -.09rem; */
   }
 
   header .icons {
@@ -252,5 +253,21 @@ header .icons #menu-bars {
     line-height: 3.4rem;
     width: 3.4rem;
     font-size: 1.4rem;
+  }
+}
+
+@media (max-width:320px) {
+  header .logo img {
+    width: 6.5rem;
+    left: -50%;
+  }
+
+  header .logo div {
+    font-size: 1.2rem;
+    margin-left: .2rem;
+  }
+
+  header .icons a.MemberBtn {
+    font-size: 1.2rem;
   }
 }
