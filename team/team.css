@@ -18,7 +18,6 @@
   outline: none;
   border: none;
   text-transform: capitalize;
-  transition: all 0.2s linear;
 }
 
 html {
@@ -34,11 +33,11 @@ body {
 /* ===== Team Style ===== */
 
 .team {
-  padding: 3rem 9%;
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
+  
 }
 
 .heading {
@@ -50,4 +49,205 @@ body {
   text-align: center;
   font-size: 4rem;
   text-transform: uppercase;
+}
+
+.cards {
+  margin-top: 20rem;
+  display: flex;
+}
+
+.card {
+  margin: 4rem;
+  position: relative;
+  background: linear-gradient(
+    90deg, 
+    rgb(0, 191, 166, .1), 
+    rgb(53, 76, 206, .1)
+  );
+  width: 40rem;
+  height: 22rem;
+  border-radius: 2rem;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, .15);
+  transition: .5s;
+}
+
+.card:hover {
+  height: 50rem;
+}
+
+.card .imgBx {
+  position: absolute;
+  left: 50%;
+  top: -10rem;
+  transform: translateX(-50%);
+  width: 18rem;
+  height: 23rem;
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, .35);
+  overflow: hidden;
+  transition: .5s;
+}
+
+.card:hover .imgBx {
+  width: 25rem;
+  height: 30rem;
+}
+
+.card .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card .content .details {
+  padding: 40px 0;
+  text-align: center;
+  width: 100%;
+  transition: .5s;
+  transform: translateY(150px);
+}
+
+.card:hover .content .details {
+  transform: translateY(0px);
+}
+
+.card .content .details h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: var(--light-color);
+  line-height: 1.2em;
+}
+
+.card .content .details h2 span {
+  font-size: .75em;
+  font-weight: 500;
+  opacity: .5;
+}
+
+.card .content .details .data {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.card .content .details .data i {
+  font-size: 1.5em;
+  color: var(--light-color);
+  line-height: 1.4em;
+  font-weight: 600;
+}
+
+.card .content .details .data i.fa-twitter {
+  color: #1da1f3;
+}
+
+.card .content .details .data i.fa-instagram {
+  color: #dd6b91;
+}
+
+.card .content .details .data i span {
+  text-transform: lowercase;
+  font-size: .85em;
+  font-weight: 400;
+}
+
+.card .content .details .data i.fa-twitter span {
+  color: var(--light-color);
+}
+
+.card .content .details .data i.fa-instagram span {
+  color: var(--light-color);
+}
+
+.card .content .details .actionBtn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card .content .details .actionBtn button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1.5em;
+  font-weight: 500;
+  background: var(--green-mute);
+  color: #fff;
+  cursor: pointer;
+}
+
+.card .content .details .actionBtn a:nth-child(2) button {
+  border: 1px solid #999;
+  color: #999;
+  background: transparent
+}
+
+
+/* media queries */
+
+@media (max-width:768px) {
+  .cards {
+  display: flex;
+  flex-direction: column;
+  }
+
+  .cards .card:last-child {
+    margin-top: 15rem;
+  }
+
+}
+
+@media (max-width:425px) {
+  .card {
+    font-size: 85%;
+    width: 36rem;
+    height: 22rem;
+  }
+  
+  .card:hover {
+    height: 44rem;
+  }
+
+  .card .imgBx {
+    top: -6rem;
+    width: 16rem;
+    height: 20rem;
+  }
+  
+  .card:hover .imgBx {
+    top: -10rem;
+    width: 23rem;
+    height: 28rem;
+  }
+
+  .card .content {
+    padding-bottom: 1rem;
+  }
+
+  .card:hover .content {
+    padding-bottom: 0rem;
+  }
+
+  .card .content .details {
+    padding-bottom: 4rem;
+  }
+
+  .card .content .details .actionBtn button {
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+  }
 }
