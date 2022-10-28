@@ -138,6 +138,7 @@ body {
 }
 
 .pdf {
+  margin: 2rem 0;
   width: 690px;
   height: auto;
   background: rgba(255, 255, 255, 0.5);
@@ -200,6 +201,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
   .Membership form {
     margin: 0 8rem 5rem;
   }
@@ -207,9 +209,76 @@ body {
   .Membership form .inputBox .input {
     width: 100%;
   }
+
+  .Membership form .inputBox .input span,
+  .Membership form .inputBox .input input,
+  .Membership form .inputBox .input select,
+  .Membership form .inputBox .input textarea {
+    font-size: 1.6rem;
+  }
+
+  /* PDF */
+
+  .pdf {
+    margin: 2rem 0;
+    width: 50rem;
+    height: auto;
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  .pdf .logo {
+    margin: 2rem;
+  }
+  
+  .pdf .logo img {
+    width: 8rem;
+    height: auto;
+    /* margin-right: 1rem; */
+    filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.4));
+    z-index: 10;
+  }
+  
+  .pdf .logo p {
+    color: var(--green-mute);
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  .pdf .logo p span {
+    color: var(--blue);
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  .pdf h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    padding:2rem 4rem 0 ;
+    color: var(--green);
+  }
+  
+  .pdf .elelments {
+    margin: 4rem;
+  }
+  
+  .pdf .elelments p {
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+
+  .pdfBtn .btn {
+    font-size: 1.6rem;
+  }
+  
+  .pdfBtn button {
+    margin-right: 1.5rem;
+  }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 432px) {
+.container_pdf {
+    height: 100vh;
+  }
   .heading{
     font-size: 3rem;
     padding: 1rem;
@@ -219,4 +288,47 @@ body {
   .Membership form {
     margin: 0 4rem 4rem;
   }
+
+  
+  /* PDF */
+
+  .pdf {
+    width: 30rem;
+  }
+  
+  .pdf .logo img {
+    width: 6rem;
+  }
+  
+  .pdf .logo p {
+    font-size: 1.4rem;
+  }
+  
+  .pdf .logo p span {
+    font-size: 1.4rem;
+  }
+  
+  .pdf h1 {
+    font-size: 1.4rem;
+    padding:2rem 1rem 0 ;
+  }
+  
+  .pdf .elelments {
+    margin: 1rem;
+  }
+  
+  .pdf .elelments p {
+    font-size: 1.2rem;
+  }
+  
+  
+.pdfBtn {
+  margin: 0;
+}
+
+  .pdfBtn .btn {
+    padding: 0.4rem 1rem;
+    font-size: 1.3rem;
+  }
+  
 }
