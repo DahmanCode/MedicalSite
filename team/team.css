@@ -33,7 +33,7 @@ body {
 /* ===== Team Style ===== */
 
 .team {
-  min-height: 80vh;
+  /* min-height: 60vh; */
   display: flex;
   /* align-items: center; */
   justify-content: center;
@@ -52,7 +52,7 @@ body {
 }
 
 .cards {
-  margin-top: 20rem;
+  margin: 20rem 0;
   display: flex;
 }
 
@@ -61,8 +61,8 @@ body {
   position: relative;
   background: linear-gradient(
     90deg, 
-    rgb(0, 191, 166, .1), 
-    rgb(53, 76, 206, .1)
+    rgba(0, 191, 166, .1), 
+    rgba(53, 76, 206, .1)
   );
   width: 40rem;
   height: 22rem;
