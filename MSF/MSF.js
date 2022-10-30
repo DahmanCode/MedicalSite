@@ -1,33 +1,33 @@
-const signinBtn = document.querySelector('.signinBtn')
-const signupBtn = document.querySelector('.signupBtn')
-const formBx = document.querySelector('.formBx')
-const body = document.querySelector('body')
+// const signinBtn = document.querySelector('.signinBtn')
+// const signupBtn = document.querySelector('.signupBtn')
+// const formBx = document.querySelector('.formBx')
 
-signupBtn.onclick = function () {
-  formBx.classList.add('active')
-  body.classList.add('active')
-}
+// signupBtn.onclick = function () {
+//   formBx.classList.add('active')
+//   body.classList.add('active')
+// }
 
-signinBtn.onclick = function () {
-  formBx.classList.remove('active')
-  body.classList.remove('active')
-}
+// signinBtn.onclick = function () {
+//   formBx.classList.remove('active')
+//   body.classList.remove('active')
+// }
 
 // ===== Insertion Of Element Into The PDF ===== //
 
 function showPDF() {
-  var form_name = document.querySelector('.name').value
-  var form_lastname = document.querySelector('.lastname').value
-  var form_tel = document.querySelector('.tel').value
-  var form_address = document.querySelector('.address').value
-  var form_place = document.querySelector('.place').value
-  var form_date = document.querySelector('.date').value
-  var form_addressP = document.querySelector('.addressP').value
-  var form_cnie = document.querySelector('.cnie').value
-  var form_activites = document.querySelector('.activites').value
-  var form_OActivites = document.querySelector('.OActivites').value
-  var form_semister = document.querySelector('.semister').value
-  var form_filiere = document.querySelector('.filiere').value
+const body = document.querySelector('body')
+  var form_name = document.querySelector('#name').value
+  var form_lastname = document.querySelector('#lastname').value
+  var form_tel = document.querySelector('#tel').value
+  var form_address = document.querySelector('#address').value
+  var form_place = document.querySelector('#place').value
+  var form_date = document.querySelector('#date').value
+  var form_addressP = document.querySelector('#addressP').value
+  var form_cnie = document.querySelector('#cnie').value
+  var form_activites = document.querySelector('#activites').value
+  var form_OActivites = document.querySelector('#OActivites').value
+  var form_semister = document.querySelector('#semister').value
+  var form_filiere = document.querySelector('#filiere').value
 
   // var send = document.getElementById('#send')
 

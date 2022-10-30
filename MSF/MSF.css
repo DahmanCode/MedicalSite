@@ -75,6 +75,7 @@ body {
   );
   padding: 1.5rem;
   margin: 0 auto 4rem;
+  
 }
 
 .Membership form .inputBox {
@@ -83,21 +84,22 @@ body {
   justify-content: space-between;
 }
 
-.Membership form .inputBox .input {
+.inputBox .form-control {
+  position: relative;
   width: 49%;
 }
 
-.Membership form .inputBox .input span {
+.inputBox .form-control label {
   display: block;
   padding: 0.5rem 0;
   font-size: 1.8rem;
   color: var(--light-color);
 }
 
-.Membership form .inputBox .input input,
-.Membership form .inputBox .input select,
-.Membership form .inputBox .input textarea {
+.form-control input,
+.form-control select {
   background: #eee;
+  border: .3rem solid #f0f0f0;
   border-radius: 0.5rem;
   padding: 1rem;
   font-size: 1.8rem;
@@ -107,20 +109,81 @@ body {
   width: 100%;
 }
 
-.Membership form .inputBox .input input:focus,
-.Membership form .inputBox .input select:focus,
-.Membership form .inputBox .input textarea:focus {
-  border: 0.1rem solid var(--blue);
+.form-control input:focus,
+.form-control select:focus {
+  /* border: 0.1rem solid var(--blue); */
+  outline: 0;
 }
 
-.Membership form .inputBox .input textarea {
-  height: 20rem;
-  resize: none;
+.form-control.success input {
+	border-color: #2ecc71;
 }
 
-.Membership form .btn {
-  margin-top: 0;
+.form-control.error input {
+	border-color: #e74c3c;
 }
+
+.Membership form button:last-child {
+  /* margin-top: 0; */
+  margin-left: 1.5rem;
+  background: var(--blue);
+  transition: .5s;
+}
+
+
+/* ================ */
+
+
+.form-control i {
+  font-size: 1.8rem;
+	visibility: hidden;
+	position: absolute;
+	top: 50%;
+	right: 13px;
+  transform: translateY(10%);
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+  font-size: 1.6rem;
+	color: #e74c3c;
+	position: absolute;
+	bottom: -5px;
+	right: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.show {
+  display: none;
+}
+
+/* .form button {
+	background-color: #8e44ad;
+	border: 2px solid #8e44ad;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+} */
+
+/* ================ */
 
 /* ===== PDF ===== */
 
@@ -205,14 +268,14 @@ body {
     margin: 0 8rem 5rem;
   }
 
-  .Membership form .inputBox .input {
+  .Membership form .inputBox .form-control {
     width: 100%;
   }
 
-  .Membership form .inputBox .input span,
-  .Membership form .inputBox .input input,
-  .Membership form .inputBox .input select,
-  .Membership form .inputBox .input textarea {
+  .Membership form .inputBox .form-control label,
+  .Membership form .inputBox .form-control input,
+  .Membership form .inputBox .form-control select,
+  .Membership form .inputBox .form-control textarea {
     font-size: 1.6rem;
   }
 
