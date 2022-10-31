@@ -126,6 +126,42 @@ section {
   padding-left: 5rem;
 }
 
+.club .content .description ol {
+  margin-top: 4rem;
+}
+
+.club .content .description ol li {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.club .content .description ol li a {
+  color: var(--blue);
+}
+
+.club .content .doc {
+  padding-top: 10rem;
+  /* border: 1rem solid var(--green-mute); */
+}
+
+.club .content .doc div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10rem;
+}
+
+.club .content .doc h2 {
+  margin-bottom: 4rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.club .content .doc img {
+  width: 40rem;
+}
+
 /* media queries */
 
 @media (max-width:1440px) {
