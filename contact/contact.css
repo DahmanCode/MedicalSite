@@ -114,12 +114,57 @@ body {
 }
 
 .contact form .inputBx input {
-  width: 49%;
+  width: 49%; 
 }
 
 .contact form textarea {
   height: 20rem;
   resize: none;
+}
+
+.popup {
+  width: 40rem;
+  background-color: #eee;
+  border-radius: 6px;
+  position: absolute;
+  top: 0%;
+  /* top: 34%; */
+  left: 50%;
+  transform: translate(-50%, -50%) scale(.1);
+  text-align: center;
+  padding: 0 30px 15px;
+  color: #333;
+  transition: transform .4s, top .4s;
+  transition-delay: 1s;
+}
+
+.open-popup {
+  top: 34%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup i {
+  border: none;
+  font-size: 8rem;
+  color: #049a18;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow:  0 5px 8px rgba(0, 0, 0, .2);
+}
+
+.popup h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.popup p {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.popup button {
+  width: 100%;
 }
 
 

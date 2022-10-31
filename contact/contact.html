@@ -12,6 +12,15 @@
     <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="../Header/header.css" />
     <link rel="stylesheet" href="../footer/footer.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      ;(function () {
+        emailjs.init('h1I3--wWwkPvI8Zle')
+      })()
+    </script>
     <title>Contact Us - Students Activites Office</title>
   </head>
   <body>
@@ -59,16 +68,25 @@
         </div>
         <form action="">
           <div class="inputBx">
-            <input type="text" placeholder="Full Name" />
-            <input type="text" placeholder="Email Address" />
+            <input type="text" placeholder="Full Name" id="fullNmae" />
+            <input type="text" placeholder="Email Address" id="emailId" />
           </div>
-          <input type="text" placeholder="Subject" class="box" />
+          <input type="text" placeholder="Subject" class="box" id="subject" />
           <textarea
             placeholder="Write your message here"
             cols="30"
             rows="10"
+            id="message"
           ></textarea>
-          <input type="submit" class="btn" value="send" />
+          <button class="btn" type="button" onclick="sendMail(), openPopup()">
+            send
+          </button>
+          <div class="popup" id="popup">
+            <i class="fas fa-check-circle"></i>
+            <h2>thank you!</h2>
+            <p>your message sent successfully. Thanks!</p>
+            <button class="btn" id="btn" onclick="closePopup()">OK</button>
+          </div>
         </form>
       </div>
     </section>
@@ -103,7 +121,7 @@
         <div class="box">
           <h3>contact us</h3>
           <p><i class="fas fa-phone"></i> +212-608-52-63-98</p>
-          <p><i class="fas fa-envelope"></i> aeispitsguelmim@gmail.com</p>
+          <p><i class="fas fa-envelope"></i> association.eispitsg@gmail.com</p>
           <p><i class="fas fa-map-marker-alt"></i> med 6 guelmim morocco</p>
         </div>
       </div>
@@ -113,6 +131,7 @@
       </div>
     </section>
 
+    <script src="sendMail.js"></script>
     <script src="../Header/header.js"></script>
   </body>
 </html>
