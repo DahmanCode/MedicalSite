@@ -48,6 +48,17 @@ body {
   background: var(--gradient);
 }
 
+.heading {
+  color: transparent;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding: 10rem 0 2rem;
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
 /* ===== club ===== */
 
 section {
@@ -139,27 +150,49 @@ section {
   color: var(--blue);
 }
 
+.club .content .doc::before {
+  position: absolute;
+  top: 5rem;
+  right: 50%;
+  transform: translateX(50%);
+  content: "";
+  width: 80%;
+  height: 2rem;
+  border-top: .5rem solid #00bfa6;
+}
+
 .club .content .doc {
+  position: relative;
+  padding: 4rem;
+  /* border: 1rem solid var(--blue); */
   padding-top: 10rem;
-  /* border: 1rem solid var(--green-mute); */
+  display: grid;
+  place-items: center;
 }
 
-.club .content .doc div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 10rem;
+.club .content .doc .pdfs {
+  display: grid;
+  place-items: center;
+  /* grid-template-columns: repeat(auto-fill, minmax(65rem, 1fr)); */
+  gap: 5rem;
+  margin: 0 4rem;
+  
 }
 
-.club .content .doc h2 {
-  margin-bottom: 4rem;
-  font-size: 3rem;
-  text-align: center;
+.club .content .doc .pdf {
+  border: .1rem solid rgba(0, 0, 0, .1);
 }
 
 .club .content .doc img {
-  width: 40rem;
+  width: 100%;
+  height: 80rem;
+  object-fit: cover;
+}
+
+.club .content .doc .pdf {
+  /* width: 100%; */
+  width: 65rem;
+  height: 100rem;
 }
 
 /* media queries */
@@ -222,9 +255,29 @@ section {
   .club .content .description p {
     width: 85%;
   }
+
+  .club .content .doc h2 {
+    font-size: 2.8rem;
+  }
+
+  .club .content .doc .pdfs {
+    /* grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr)); */
+  margin: 0 2rem;
+  }
+
+  .content .description .list {
+    margin-left: 5rem;
+  }
+
+  .club .content .doc .pdf {
+    width: 40rem;
+    height: 60rem;
+    /* margin: 0 4rem; */
+  }
+  
 }
 
-@media (max-width:425px) {
+@media (max-width:432px) {
   section {
     margin-top: 6rem;
   }
@@ -249,5 +302,34 @@ section {
     font-size: 1.8rem;
   letter-spacing: 1.4px;
   line-height: 4rem;
+  }
+
+  .club .content .doc {
+    padding-top: 2rem;
+  }
+
+  
+
+  .club .content .description ol li {
+    font-size: 1.8rem;
+  }
+
+  .club .content .doc h2 {
+    font-size: 2.5rem;
+    margin: 1rem 2rem 0;
+  }
+
+  .club .content .doc .pdfs {
+    /* grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr)); */
+  margin: 0;
+  }
+  
+  .club .content .doc .pdf {
+    width: 35rem;
+    height: 50rem;
+  }
+
+  .club .content .doc img {
+    height: 60rem;
   }
 }
