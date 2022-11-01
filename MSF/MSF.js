@@ -11,6 +11,29 @@
 //   formBx.classList.remove('active')
 //   body.classList.remove('active')
 // }
+const selectBtn = document.querySelector(".select-btn");
+
+selectBtn.addEventListener("click", () => {
+  selectBtn.classList.toggle("open");
+});
+  
+var valueList = document.getElementById('valueList');
+var listArray = [];
+
+var checkboxes = document.querySelectorAll('.checkboxe');
+console.log(checkboxes);
+
+for (var checkbox of checkboxes) {
+  checkbox.addEventListener('click', function () {
+    if (this.checked == true) {
+      listArray.push(this.value);
+      valueList.innerHTML = listArray.join(' - ');
+    } else {
+      listArray = listArray.filter(e => e !== this.value);
+      valueList.innerHTML = listArray.join(' - ');
+    }
+  })
+}
 
 // ===== Insertion Of Element Into The PDF ===== //
 
@@ -22,18 +45,26 @@ const body = document.querySelector('body')
   var form_address = document.querySelector('#address').value
   var form_place = document.querySelector('#place').value
   var form_date = document.querySelector('#date').value
-  var form_addressP = document.querySelector('#addressP').value
   var form_cnie = document.querySelector('#cnie').value
   var form_activites = document.querySelector('#activites').value
   var form_OActivites = document.querySelector('#OActivites').value
   var form_semister = document.querySelector('#semister').value
   var form_filiere = document.querySelector('#filiere').value
 
+
   // var send = document.getElementById('#send')
 
   // send.onclick = () => {
   //   body.classList.add('active')
   // }
+
+  function called() {
+    if (form_activites == 'autre') {
+      return `<p>si cliquez sur autre: <strong>${form_OActivites}</strong></p>`;
+    } else {
+      return 0;
+    }
+  }
 
   body.innerHTML = `
     <div class="container_pdf">
@@ -50,12 +81,12 @@ const body = document.querySelector('body')
           <p>Email address: <strong>${form_address}</strong></p>
           <p>lieu de naissance: <strong>${form_place}</strong></p>
           <p>Date de naissance: <strong>${form_date}</strong></p>
-          <p>adresse postale: <strong>${form_addressP}</strong></p>
           <p>CNIE: <strong>${form_cnie}</strong></p>
           <p>quelle sont les activites que vous aimez? <strong>${form_activites}</strong></p>
-          <p>si cliquez sur autre: <strong>${form_OActivites}</strong></p>
+          ${called()}
           <p>votre semister: <strong>${form_semister}</strong></p>
           <p>votre filiere: <strong>${form_filiere}</strong></p>
+          <p>votre club & program: <strong>${listArray}</strong></p>
         </div>
       </div>
       <div class="pdfBtn">

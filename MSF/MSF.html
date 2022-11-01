@@ -107,18 +107,23 @@
             <small>Error message</small>
           </div>
           <div class="form-control">
-            <label for="addressP">adresse postale</label>
-            <input type="text" placeholder="ecrivez code" id="addressP" />
-            <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
-          </div>
-          <div class="form-control">
             <label for="cnie">CNIE</label>
             <input type="text" placeholder="ecrivez votre CNIE" id="cnie" />
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
             <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="semister">votre semister</label>
+            <select name="" id="semister">
+              <option value="S1" selected>S1</option>
+              <option value="S2">S2</option>
+              <option value="S3">S3</option>
+              <option value="S4">S4</option>
+              <option value="S5">S5</option>
+              <option value="S6">S6</option>
+            </select>
+            <span class="error"></span>
           </div>
           <div class="form-control">
             <label for="activites">quelle sont les activites que vous aimez?</label>
@@ -140,19 +145,32 @@
               placeholder="Qu'est-ce que tu aimes?"
               id="OActivites"
             />
-            <span class="error"></span>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
           </div>
-          <div class="form-control">
-            <label for="semister">votre semister</label>
-            <select name="" id="semister">
-              <option value="S1" selected>S1</option>
-              <option value="S2">S2</option>
-              <option value="S3">S3</option>
-              <option value="S4">S4</option>
-              <option value="S5">S5</option>
-              <option value="S6">S6</option>
-            </select>
-            <span class="error"></span>
+          <div class="checkbox">
+            <label>club & program</label>
+            <div class="select-btn">
+              <span class="btn-text" id="valueList">select club or program</span>
+              <span class="arrow-dwn">
+                <i class="fa-solid fa-chevron-down"></i>
+              </span>
+            </div>
+            <div class="input-box">
+              <div class="box">
+                <input type="checkbox" id="sportif" class="checkboxe" value="club sportif">
+                <label for="sportif">club sportif</label>
+              </div>
+              <div class="box">
+                <input type="checkbox" id="social" class="checkboxe" value="club social">
+                <label for="social">club social</label>
+              </div>
+              <div class="box">
+                <input type="checkbox" id="wiqaya" class="checkboxe" value="program wiqaya">
+                <label for="wiqaya">program wiqaya</label>
+              </div>
+            </div>
           </div>
           <div class="form-control">
             <label for="filiere">votre filiere</label>

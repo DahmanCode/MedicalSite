@@ -5,11 +5,14 @@ const tel = document.getElementById('tel');
 const email = document.getElementById('address');
 const place = document.getElementById('place');
 const date = document.getElementById('date');
-const addressP = document.getElementById('addressP');
 const cnie = document.getElementById('cnie');
+const activitie = document.getElementById('OActivites');
+const activities = document.getElementById('activites');
 
 const submit = document.querySelector('.submit');
 const send = document.querySelector('#send');
+const valid = document.querySelector('.valid');
+const vali = document.querySelector('.vali');
 
 form.addEventListener('submit', e => {
 	e.preventDefault();
@@ -25,12 +28,14 @@ function checkInputs() {
 	const emailValue = email.value.trim();
 	const placeValue = place.value.trim();
 	const dateValue = date.value.trim();
-	const addressPValue = addressP.value.trim();
 	const cnieValue = cnie.value.trim();
+	const activitieValue = activitie.value.trim();
+	const activitiesValue = activities.value.trim();
 
   submit.onclick = valid()
   function valid () {
-  if (cnieValue !== '' && addressPValue !== '' && isEmail(emailValue) == true && dateValue !== '' && placeValue !== '' && lastnameValue !== '' && usernameValue !== '') {
+
+    if (cnieValue !== '' && isEmail(emailValue) == true && dateValue !== '' && placeValue !== '' && telValue !== '' && lastnameValue !== '' && usernameValue !== '') {
       send.classList.remove('show')
     } else {
       send.classList.add('show')
@@ -38,25 +43,27 @@ function checkInputs() {
   }
 	
 	if(usernameValue === '') {
-		setErrorFor(username, 'Username cannot be blank');
+		setErrorFor(username, 'Username is required');
 	} else {
 		setSuccessFor(username);
 	}
 
 	if(lastnameValue === '') {
-		setErrorFor(lastname, 'Lastname cannot be blank');
+		setErrorFor(lastname, 'Lastname is required');
 	} else {
 		setSuccessFor(lastname);
 	}
 
 	if(telValue === '') {
-		setErrorFor(tel, 'Lastname cannot be blank');
-	} else {
+		setErrorFor(tel, 'Telephone is required');
+	} else if (telValue.length !== 10) {
+    setErrorFor(tel, 'incomplete number');
+  }else {
 		setSuccessFor(tel);
 	}
   
   if(emailValue === '') {
-    setErrorFor(email, 'Email cannot be blank');
+    setErrorFor(email, 'Email is required');
   } else if (!isEmail(emailValue)) {
     setErrorFor(email, 'Not a valid email');
   } else {
@@ -64,28 +71,35 @@ function checkInputs() {
   }
 
 	if(placeValue === '') {
-		setErrorFor(place, 'Lastname cannot be blank');
+		setErrorFor(place, 'Place of birth is required');
 	} else {
 		setSuccessFor(place);
 	}
 
 	if(dateValue === '') {
-		setErrorFor(date, 'Lastname cannot be blank');
+		setErrorFor(date, 'Date of Birth is required');
 	} else {
 		setSuccessFor(date);
 	}
 
-	if(addressPValue === '') {
-		setErrorFor(addressP, 'Lastname cannot be blank');
-	} else {
-		setSuccessFor(addressP);
-	}
 
 	if(cnieValue === '') {
-		setErrorFor(cnie, 'Lastname cannot be blank');
+		setErrorFor(cnie, 'CNIE is required');
 	} else {
 		setSuccessFor(cnie);
 	}
+
+  if (activitiesValue == 'autre') {
+
+    if(activitieValue === '') {
+      setErrorFor(activitie, 'This field is required');
+    } else{
+      setSuccessFor(activitie);
+    }
+  } else{
+    const formControl = activitie.parentElement;
+    formControl.className = 'form-control';
+  }
 
 
 
@@ -107,3 +121,41 @@ function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
 
+
+// var form = document.getElementById("form");
+// var values = [];
+// form.addEventListener('submit', e () => {
+// 	e.preventDefault();
+// 	var checkBox = document.getElementsByName('languages');
+// 	for (var i = 0; i < checkBox.length; i++) {
+// 		if (checkBox[i].checked == true) {
+// 			values.push(checkBox[i].value);
+// 		}
+// 	}
+// 	alert('The value(s): ' + values.toString())
+// })
+
+
+// const selectBtn = document.querySelector(".select-btn");
+
+// selectBtn.addEventListener("click", () => {
+// 	selectBtn.classList.toggle("open");
+// });
+
+// var valueList = document.getElementById('valueList');
+// var listArray = [];
+
+// var checkboxes = document.querySelectorAll('.checkboxe');
+// console.log(checkboxes);
+
+// for (var checkbox of checkboxes) {
+// 	checkbox.addEventListener('click', function () {
+// 		if (this.checked == true) {
+// 			listArray.push(this.value);
+// 			valueList.innerHTML = listArray.join(' - ');
+// 		} else {
+// 			listArray = listArray.filter(e => e !== this.value);
+// 			valueList.innerHTML = listArray.join(' - ');
+// 		}
+// 	})
+// }
