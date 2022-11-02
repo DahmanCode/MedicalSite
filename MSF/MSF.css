@@ -329,7 +329,8 @@ body {
     margin: 0 8rem 5rem;
   }
 
-  .Membership form .inputBox .form-control {
+  .Membership form .inputBox .form-control,
+  .Membership form .inputBox .checkbox {
     width: 100%;
   }
 
