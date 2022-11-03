@@ -11,8 +11,6 @@ const activities = document.getElementById('activites');
 
 const submit = document.querySelector('.submit');
 const send = document.querySelector('#send');
-const valid = document.querySelector('.valid');
-const vali = document.querySelector('.vali');
 
 form.addEventListener('submit', e => {
 	e.preventDefault();

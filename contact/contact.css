@@ -88,10 +88,19 @@ body {
   padding: 2rem;
 }
 
+.contact form .inputBx .form-control {
+  position: relative;
+  width: 49%;
+}
+
+.contact form .form-control {
+  position: relative;
+}
+
 .contact form .inputBx {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .contact form .inputBx input,
@@ -114,12 +123,47 @@ body {
 }
 
 .contact form .inputBx input {
-  width: 49%; 
+  width: 100%;
 }
 
 .contact form textarea {
   height: 20rem;
   resize: none;
+  /* position: relative; */
+}
+
+/* ========== */
+
+.form-control i {
+  font-size: 1.8rem;
+	visibility: hidden;
+	position: absolute;
+	top: 1.5rem;
+	right: 8px;
+  transform: translateY(10%);
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+  font-size: 1.6rem;
+	color: #e74c3c;
+	position: absolute;
+	bottom: 10px;
+	right: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
 }
 
 .popup {
@@ -181,6 +225,15 @@ body {
   }
   
   .contact form .inputBx input {
+    width: 100%;
+  }
+
+  .contact form .inputBx {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .contact form .inputBx .form-control {
     width: 100%;
   }
 }

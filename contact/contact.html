@@ -18,7 +18,7 @@
     ></script>
     <script type="text/javascript">
       ;(function () {
-        emailjs.init('h1I3--wWwkPvI8Zle')
+        emailjs.init('k7FB6r7b8JaFYGFf4')
       })()
     </script>
     <title>Contact Us - Students Activites Office</title>
@@ -64,29 +64,40 @@
       <h1 class="heading">contact us</h1>
       <div class="contact-content">
         <div class="image">
-          <img src="../images/medi.png" alt="" />
+          <img src="../images/medi.png" alt=""/>
         </div>
-        <form action="">
+        <form id="form">
           <div class="inputBx">
-            <input type="text" placeholder="Full Name" id="fullNmae" />
-            <input type="text" placeholder="Email Address" id="emailId" />
+            <div class="form-control">
+              <input type="text" placeholder="Full Name" id="fullName" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <input type="text" placeholder="Email Address" id="emailId" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
           </div>
-          <input type="text" placeholder="Subject" class="box" id="subject" />
-          <textarea
+          <!-- <div class="form-control"> -->
+            <input type="text" placeholder="Subject" class="box" id="subject" />
+          <!-- </div> -->
+          <div class="form-control">
+            <textarea
             placeholder="Write your message here"
             cols="30"
             rows="10"
             id="message"
-          ></textarea>
-          <button class="btn" type="button" onclick="sendMail(), openPopup()">
+            ></textarea>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <button class="btn submit">
             send
           </button>
-          <div class="popup" id="popup">
-            <i class="fas fa-check-circle"></i>
-            <h2>thank you!</h2>
-            <p>your message sent successfully. Thanks!</p>
-            <button class="btn" id="btn" onclick="closePopup()">OK</button>
-          </div>
         </form>
       </div>
     </section>
