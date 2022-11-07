@@ -6,7 +6,7 @@
   --green: #049a18;
   --black: #192a56;
   --light-color: #444;
-  --gradient: linear-gradient(90deg, var(--blue), var(--green-mute) )
+  --gradient: linear-gradient(90deg, var(--blue), var(--green-mute));
 }
 
 * {
@@ -28,12 +28,11 @@ html {
 
 body {
   overflow-x: hidden;
-
 }
 
-/* ===== Parascolaire Style ===== */
+/* ===== event Style ===== */
 
-.parascolaire {
+.event {
   padding: 3rem 9%;
   height: 80vh;
   display: flex;
