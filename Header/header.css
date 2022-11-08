@@ -223,6 +223,24 @@ header .icons #menu-bars {
   header .icons a.MemberBtn {
     margin-right: 0rem;
   }
+
+  #search-form #search-box {
+    width: 300px;
+    padding: 5px 0;
+    font-size: 20px;
+  }
+
+  #search-form label {
+    font-size: 20px;
+    margin-left: 0px;
+  }
+
+  #search-form #close {
+    color: var(--green-mute);
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+  }
 }
 
 @media (max-width:432px) {
