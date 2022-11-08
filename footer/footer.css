@@ -44,6 +44,14 @@
   padding: .7rem 0;
 }
 
+.footer .box-container .box:first-child a {
+  color: var(--green-mute);
+}
+
+.footer .box-container .box:first-child a:hover {
+  color: var(--blue);
+}
+
 .footer .box-container .box a:hover {
   color: var(--green-mute);
 }

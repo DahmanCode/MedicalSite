@@ -1,4 +1,4 @@
-const body = document.querySelector("[data-container]");
+const sections = document.querySelectorAll("section");
 const searchInput = document.querySelector("[data-search]");
 let content = [];
 
@@ -7,13 +7,18 @@ searchInput.addEventListener("input", e => {
   console.log(value);
 })
 
-function searchBtn() {
+  const search = sections.forEach().textContent.trim();
+  console.log(search);
 
-  const search = body.textContent;
-  search.innerHTML = search.textContent.replace(pattern, match => `<mark>${match}</mark>`)
+const re = /All/g;
+
+const matches = search.matchAll(re);
+
+for (const match of matches) {
+  console.log(match);
 }
 
-console.log(search);
+
 
 // function search() {
 //   let textToSearch = document.getElementById("search-box").value;
