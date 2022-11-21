@@ -139,7 +139,7 @@ section {
 
 /* ===== SPORT IMAGES ===== */
 
-.club .content .slide-container {
+.slide-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -151,14 +151,14 @@ section {
   padding: 0 30px;
 }
 
-.club .content .slide-container h2 {
+.slide-container h2 {
   color: var(--green-mute);
   margin: 6rem 0;
   text-align: center;
   font-size: 5rem;
 }
 
-.club .content .image-container {
+.image-container {
   position: relative;
   display: flex;
   align-items: center;
@@ -166,17 +166,17 @@ section {
   width: 100%;
 }
 
-.club .content .image-container img {
+.slide-container .image-container img {
   position: relative;
   width: 50vw;
   display: none;
 }
 
-.club .content .active {
+.slide-container .image-container .active {
   display: block;
 }
 
-.club .content .dot-container {
+.slide-container .dot-container {
   width: 150px;
   margin: 20px auto 0 auto;
   display: flex;
@@ -184,12 +184,12 @@ section {
   justify-content: space-around;
 }
 
-.club .content button {
+.slide-container button {
   outline: none;
   cursor: pointer;
 }
 
-.club .content .dot-container button {
+.slide-container .dot-container button {
   height: 13px;
   width: 13px;
   border-radius: 50%;
@@ -197,12 +197,12 @@ section {
   background-color: transparent;
 }
 
-.club .content .dot-container button:nth-child(1) {
+.slide-container .dot-container button:nth-child(1) {
   background-color: #52ecb9;
 }
 
-.club .content #prev,
-.club .content #next {
+.slide-container #prev,
+.slide-container #next {
   height: 40px;
   width: 40px;
   position: absolute;
@@ -218,11 +218,11 @@ section {
   font-weight: bolder;
 }
 
-.club .content #prev {
+.slide-container #prev {
   left: 30px;
 }
 
-.club .content #next {
+.slide-container #next {
   right: 30px;
 }
 
