@@ -62,7 +62,7 @@ body {
 /* ===== club ===== */
 
 section {
-  margin-top: 8rem;
+  margin-top: 7rem;
 }
 
 .club .content {
@@ -115,12 +115,12 @@ section {
 .club .content .description {
   display: grid;
   place-items: center;
+  margin-top: 14rem;
 }
 
 .club .content .description h2 {
   color: var(--green-mute);
-  margin: 6rem 0;
-  padding-left: 25%;
+  margin: 4rem 0;
   text-align: center;
   font-size: 5rem;
 }
@@ -137,6 +137,98 @@ section {
   padding-left: 5rem;
 }
 
+/* ===== SPORT IMAGES ===== */
+
+.club .content .slide-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* width: 60%; */
+  min-width: 380px;
+  border-radius: 5px;
+  padding: 0 30px;
+}
+
+.club .content .slide-container h2 {
+  color: var(--green-mute);
+  margin: 6rem 0;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.club .content .image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.club .content img {
+  position: relative;
+  width: 50vw;
+  display: none;
+}
+
+.club .content .active {
+  display: block;
+}
+
+.club .content .dot-container {
+  width: 150px;
+  margin: 20px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.club .content button {
+  outline: none;
+  cursor: pointer;
+}
+
+.club .content .dot-container button {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  border: 3px solid #52ecb9;
+  background-color: transparent;
+}
+
+.club .content .dot-container button:nth-child(1) {
+  background-color: #52ecb9;
+}
+
+.club .content #prev,
+.club .content #next {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  background-color: #52ecb9;
+  color: #fff;
+  margin: auto;
+  top: 50%;
+  transform: translateY(100%);
+  /* bottom: 50%; */
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.club .content #prev {
+  left: 30px;
+}
+
+.club .content #next {
+  right: 30px;
+}
+
+
+/* ===== WiQaya ===== */
+
 .club .content .description ol {
   margin-top: 4rem;
 }
@@ -149,8 +241,6 @@ section {
 .club .content .description ol li a {
   color: var(--blue);
 }
-
-/* ===== WiQaya ===== */
 
 .wiqaya .content .doc::before {
   position: absolute;
@@ -214,10 +304,6 @@ section {
   .club .content .image img {
     left: 10%;
   }
-
-  .club .content .description h2 {
-    padding-left: 48%;
-  }
 }
 
 @media (max-width:1024px) {
@@ -227,12 +313,6 @@ section {
 
   .club .content .image {
     width: 50rem;
-  }
-  
-  .club .content .description h2 {
-    margin: 2rem 0;
-    margin-top: 10rem;
-    padding-left: 38%;
   }
 }
 
@@ -258,7 +338,7 @@ section {
   }
 
   .club .content .description h2 {
-    padding-left: 0;
+    margin-top: 10rem;
   }
 
   .club .content .description p {
@@ -267,6 +347,18 @@ section {
 
   .club .content .doc h2 {
     font-size: 2.8rem;
+  }
+
+  .club .content #prev {
+    left: 10px;
+  }
+
+  .club .content #next {
+    right: 10px;
+  }
+
+  .club .content img {
+    width: 80vw;
   }
 
   .wiqaya .content .doc .pdfs {
@@ -340,6 +432,10 @@ section {
     font-size: 1.8rem;
     letter-spacing: 1.4px;
     line-height: 4rem;
+  }
+
+  .club .content .slide-container h2 {
+    font-size: 3.5rem;
   }
 
   .wiqaya .content .doc {
