@@ -166,7 +166,7 @@ section {
   width: 100%;
 }
 
-.club .content img {
+.club .content .image-container img {
   position: relative;
   width: 50vw;
   display: none;
