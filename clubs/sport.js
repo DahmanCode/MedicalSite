@@ -1,5 +1,5 @@
 let i = 0;
-let j = 5;
+let j = 8;
 
 const dots = document.querySelectorAll(".dot-container button");
 const images = document.querySelectorAll(".image-container img");

@@ -177,7 +177,7 @@ section {
 }
 
 .slide-container .dot-container {
-  width: 150px;
+  width: 180px;
   margin: 20px auto 0 auto;
   display: flex;
   align-items: center;
@@ -190,10 +190,10 @@ section {
 }
 
 .slide-container .dot-container button {
-  height: 13px;
-  width: 13px;
+  height: 10px;
+  width: 10px;
   border-radius: 50%;
-  border: 3px solid #52ecb9;
+  border: 2px solid #52ecb9;
   background-color: transparent;
 }
 
@@ -219,11 +219,11 @@ section {
 }
 
 .slide-container #prev {
-  left: 30px;
+  left: 160px;
 }
 
 .slide-container #next {
-  right: 30px;
+  right: 160px;
 }
 
 
