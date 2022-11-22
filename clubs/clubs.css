@@ -133,6 +133,18 @@ section {
   width: 70%;
 }
 
+.club .content .description a {
+  color: var(--blue);
+}
+
+.club .content .description a i {
+  color: #dd6b91;
+}
+
+.club .content .description a:hover {
+  color: var(--green);
+}
+
 .club .content .description p::first-letter {
   padding-left: 5rem;
 }
