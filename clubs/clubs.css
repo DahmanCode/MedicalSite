@@ -62,7 +62,7 @@ body {
 /* ===== club ===== */
 
 section {
-  margin-top: 7rem;
+  margin-top: 6rem;
 }
 
 .club .content {
@@ -110,6 +110,10 @@ section {
   position: absolute;
   top: -24rem;
   left: 20%;
+}
+
+.club.sport .content .image img {
+  width: 90%;
 }
 
 .club .content .description {
@@ -326,6 +330,7 @@ section {
   .club .content .image {
     width: 50rem;
   }
+
 }
 
 @media (max-width:768px) {
@@ -343,6 +348,10 @@ section {
     left: 50%;
     top: -10rem;
     transform: translate(-50%);
+  }
+
+  .club.sport .content .image img {
+    width: 65%;
   }
 
   .club .content .description {
@@ -431,7 +440,10 @@ section {
   .club .content .image img {
     width: 85%;
   }
-
+  
+  .club.sport .content .image img {
+    width: 75%;
+  }
   .club .content .description {
     margin-top: 8rem;
   }

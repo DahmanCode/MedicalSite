@@ -159,7 +159,7 @@ section:last-of-type {
   margin: 0 4rem;
 }
 
-.programs .box-container .box {
+.programs .box {
   border-radius: .5rem;
   box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.2);
   border: .1rem solid rgba(0, 0, 0, .1);
@@ -169,8 +169,9 @@ section:last-of-type {
 }
 
 .programs .box img {
-  height: auto;
+  height: 35rem;
   width: 100%;
+  object-fit: cover;
 }
 
 .programs .box:hover {
@@ -189,24 +190,6 @@ section:last-of-type {
   padding: .5rem 0;
 }
 
-.programs .box .image a:hover {
-  letter-spacing: 2px;
-}
-
-.programs .box .image::before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  background-color: var(--blue);
-  position: absolute;
-  top: -2px;
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.programs .box .image:hover::before {
-  opacity: 0.4;
-}
 
 /* ===== vision ===== */
 
