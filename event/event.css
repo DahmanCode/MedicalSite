@@ -33,7 +33,6 @@ body {
 /* ===== event Style ===== */
 
 .event {
-  height: 100%;
   padding: 3rem 4%;
   margin-top: 3rem;
   display: flex;
