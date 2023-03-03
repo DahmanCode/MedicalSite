@@ -176,7 +176,7 @@ section:last-of-type {
 
 .programs .box:hover {
   box-shadow: none;
-  border: none;
+  border: .1rem solid transparent;
 }
 
 .programs .box h1 {
