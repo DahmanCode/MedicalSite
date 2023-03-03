@@ -33,6 +33,7 @@ body {
 /* ===== event Style ===== */
 
 .flyer {
+  /* height: 100vh; */
   padding: 3rem 4%;
   margin-top: 3rem;
   display: flex;
@@ -57,13 +58,21 @@ body {
 }
 
 .flyer .image {
-  width: 500px;
-  margin: 0 40px;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  /* width: 500px; */
+  margin: 0 40rem;
   /* overflow: hidden; */
 }
 
 .image img {
-  width: 100%;
+  width: 500px;
+  max-width: 500px;
+  margin-bottom: 3rem;
 }
 
 @media (max-width: 700px) {
@@ -71,7 +80,7 @@ body {
     font-size: 2.3rem;
   }
 
-  .flyer .image {
+  .image img {
     width: 300px;
   }
 }
