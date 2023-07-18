@@ -121,17 +121,20 @@ body {
   align-items: center;
 }
 
-.office-img,
 .office-img {
   position: relative;
   width: 20rem;
   height: 26rem;
-  border: 2px solid #00bfa6;
   border-radius: 1rem;
   overflow: hidden;
   transition: all .6s ease;
   margin: 0;
   padding: 0;
+}
+
+.consultants div:last-child .office-img img,
+.consultants div:nth-child(6) .office-img img {
+  object-fit: fill;
 }
 
 .office-img img {
