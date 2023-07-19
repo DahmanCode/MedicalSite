@@ -68,7 +68,7 @@ body {
 
 .title {
   font-size: 2.8rem;
-  margin-bottom: 20px;
+  margin-bottom: 5rem;
   font-weight: 600;
   color: var(--green-mute);
   text-align: center;
@@ -219,6 +219,14 @@ body {
 
   .consultants {
     display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 20px;
+  }
+}
+
+@media (max-width:350px) {
+  .consultants {
     grid-template-columns: 1fr;
   }
 }
