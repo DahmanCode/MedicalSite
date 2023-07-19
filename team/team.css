@@ -83,11 +83,12 @@ body {
 }
 
 .office-body {
+  width: 80%;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
-  gap: 100px;
+  /* gap: 100px; */
   margin: 60px 0;
 }
 
@@ -155,6 +156,13 @@ body {
 
 /* media queries */
 
+@media (max-width:991px)  {
+  .office-body  {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
 @media (max-width:815px) {
   .office-body {
     display: flex;
@@ -192,16 +200,26 @@ body {
     font-size: 1.8rem;
   }
 
+  .consultants {
+    /* grid-template-columns: 1fr 1fr; */
+    align-items: start;
+  }
+  
 }
 
 @media (max-width:450px) {
   .office-card {
     gap: 20px;
   }
-
+  
   .office-img {
     width: 18rem;
     height: 24rem;
+  }
+
+  .consultants {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
