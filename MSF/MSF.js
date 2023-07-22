@@ -59,7 +59,7 @@ const body = document.querySelector('body')
   // }
 
   function called() {
-    if (form_activites == 'autre') {
+    if (form_activites == 'Other') {
       return `<p>si cliquez sur autre: <strong>${form_OActivites}</strong></p>`;
     } else {
       return 0;
@@ -73,7 +73,7 @@ const body = document.querySelector('body')
           <img src="../../images/ispitsg.png" alt="" />
           <p>Students<span> Activites</span><br> Office <span>ISPITSG</span></p>
         </div>
-        <h1>Graduation you are now membership in office activite students.</h1>
+        <h1>Congrats, You are now a member of the Student Activities Office.</h1>
         <div class="elelments">
           <p>nom: <strong>${form_name}</strong></p>
           <p>prenom: <strong>${form_lastname}</strong></p>
