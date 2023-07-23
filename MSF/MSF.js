@@ -52,12 +52,6 @@ const body = document.querySelector('body')
   var form_filiere = document.querySelector('#filiere').value
 
 
-  // var send = document.getElementById('#send')
-
-  // send.onclick = () => {
-  //   body.classList.add('active')
-  // }
-
   function called() {
     if (form_activites == 'Other') {
       return `<p>si cliquez sur autre: <strong>${form_OActivites}</strong></p>`;
