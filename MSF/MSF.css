@@ -230,6 +230,10 @@ body {
   display: none;
 }
 
+/* .submit.show {
+  display: none;
+} */
+
 
 /* .form button {
 	background-color: #8e44ad;
@@ -249,7 +253,8 @@ body {
 /* ===== PDF ===== */
 
 .container_pdf {
-  height: 100vh;
+  /* height: 100vh; */
+  height: auto;
   display: flex;
   align-items: center;
   /* justify-content: center; */
@@ -262,19 +267,39 @@ body {
 }
 
 .pdf {
-  max-height: 842px;
+  position: relative;
+  max-height: 982px;
+  /* height: auto; */
   max-width: 595px;
   background: rgba(255, 255, 255, 0.5);
+}
+
+.pdf .photo {
+  position: absolute;
+  top: 4px;
+  right: 30px;
+  width: 130px;
+  height: 160px;
+  /* background-color: #9be0f1; */
+  border: 1px dotted #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pdf .photo span {
+  font-size: 1.5rem;
 }
 
 .pdf .logo {
   display: flex;
   margin: 20px;
+  margin-top: 40px;
   position: relative;
 }
 
 .pdf .logo img {
-  width: 90px;
+  width: 91px;
   padding-right: 15px;
   filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.4));
   z-index: 10;
@@ -288,23 +313,60 @@ body {
 
 .pdf .logo p span {
   color: var(--blue);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .pdf h1 {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 85px;
   color: var(--green);
 }
 
 .pdf .elelments {
+  /* position: relative; */
   margin: 30px;
+  margin-top: 10px;
+}
+
+.pdf .elelments .time {
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: end;
+  /* background-color: #9be0f1; */
+}
+
+.time span {
+  font-size: 1.3rem;
+  /* bottom: -20px; */
+}
+
+.pdf .elelments div {
+  width: 100%;
+  /* background-color: #9be0f1; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pdf .elelments div p {
+  width: 50%;
+
 }
 
 .pdf .elelments p {
   font-size: 18px;
   padding: 8px;
+  /* width: 400px; */
+}
+
+.pdf .elelments p strong {
+  display: flex;
+  /* align-items: center; */
+  justify-content: start;
 }
 
 .pdfBtn {

@@ -30,6 +30,7 @@ function checkInputs() {
 	const activitieValue = activitie.value.trim();
 	const activitiesValue = activities.value.trim();
 
+	
   submit.onclick = valid()
   function valid () {
 
@@ -99,6 +100,20 @@ function checkInputs() {
     formControl.className = 'form-control';
   }
 
+	const allElememnt = [usernameValue, lastnameValue, telValue, emailValue, placeValue, dateValue, cnieValue, activitiesValue]
+	
+	console.log(allArrTreu(allElememnt))
+
+	function allArrTreu(arr) {
+		return arr.every(element => element !== "")
+	}
+	
+	console.log(allElememnt)
+	if (allArrTreu(allElememnt) == true) {
+		submit.classList.add('show')
+  } else {
+    submit.classList.remove('show')
+  }
 
 
 }

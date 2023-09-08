@@ -21,7 +21,7 @@ var valueList = document.getElementById('valueList');
 var listArray = [];
 
 var checkboxes = document.querySelectorAll('.checkboxe');
-console.log(checkboxes);
+// console.log(checkboxes);
 
 for (var checkbox of checkboxes) {
   checkbox.addEventListener('click', function () {
@@ -51,36 +51,68 @@ const body = document.querySelector('body')
   var form_semister = document.querySelector('#semister').value
   var form_filiere = document.querySelector('#filiere').value
 
+  
+  let objectDate = new Date();
+  
+  let year = objectDate.getFullYear();
+  let month = objectDate.getMonth() + 1;
+  let day = objectDate.getDate();
+  
+  if (day < 10) {
+    day = '0' + day
+  }
+  
+  if (month < 10) {
+    month = '0' + month
+  }
+  console.log(month)
+  
+  let hour = objectDate.getHours();
+  let min = objectDate.getMinutes();
+  
+  console.log(hour, min)
 
   function called() {
-    if (form_activites == 'Other') {
-      return `<p>si cliquez sur autre: <strong>${form_OActivites}</strong></p>`;
+    if (form_activites == 'autre') {
+      return `<p>autre: <strong>${form_OActivites}</strong></p>`;
     } else {
-      return 0;
+      return "";
     }
   }
 
   body.innerHTML = `
     <div class="container_pdf">
       <div class="pdf" id="pdf">
-        <div class="logo">
-          <img src="../../images/ispitsg.png" alt="" />
+      <div class="logo">
+      <img src="../../images/ispitsg.png" alt="" />
           <p>Students<span> Activites</span><br> Office <span>ISPITSG</span></p>
+        </div>
+        <div class="photo">
+          <span>photo</span>
         </div>
         <h1>Congrats, You are now a member of the Student Activities Office.</h1>
         <div class="elelments">
-          <p>nom: <strong>${form_name}</strong></p>
-          <p>prenom: <strong>${form_lastname}</strong></p>
-          <p>telephone: <strong>${form_tel}</strong></p>
+          <div>
+            <p>nom: <strong>${form_name}</strong></p>
+            <p>prenom: <strong>${form_lastname}</strong></p>
+          </div>
+          <div>
+            <p>telephone: <strong>${form_tel}</strong></p>
+            <p>lieu de naissance: <strong>${form_place}</strong></p>
+          </div>
           <p>Email address: <strong>${form_address}</strong></p>
-          <p>lieu de naissance: <strong>${form_place}</strong></p>
           <p>Date de naissance: <strong>${form_date}</strong></p>
           <p>CNIE: <strong>${form_cnie}</strong></p>
           <p>quelle sont les activites que vous aimez? <strong>${form_activites}</strong></p>
           ${called()}
-          <p>votre semister: <strong>${form_semister}</strong></p>
+          <div>
           <p>votre filiere: <strong>${form_filiere}</strong></p>
+          <p>votre semister: <strong>${form_semister}</strong></p>
+          </div>
           <p>votre club & program: <strong>${listArray}</strong></p>
+          <div class="time">
+            <span>${year}/${month}/${day} ${hour}:${min}</span>
+          </div>
         </div>
       </div>
       <div class="pdfBtn">
@@ -95,8 +127,13 @@ function generatePDF() {
   var name_file = prompt("Name of file PDF: ");
 
   var pdf = document.getElementById("pdf");
+  pdf.style.width = '800px';
+  pdf.style.height = '1000px';
   var opt = {
-    margin: 1,
+    // jsPDF: {
+    //   format: 'a4'
+    // },
+    margin: [0, 1],
     filename: `${name_file}.pdf`,
     image: { type: 'jpeg', quality: 0.98 },
     html2canvas: { 

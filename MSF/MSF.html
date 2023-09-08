@@ -59,7 +59,7 @@
       <form id="form">
         <div class="inputBox">
           <div class="form-control">
-            <label for="username">Username</label>
+            <label for="username">nom</label>
             <input type="text" placeholder="nom" id="name" />
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
@@ -124,10 +124,10 @@
               >quelle sont les activites que vous aimez?</label
             >
             <select name="" id="activites">
-              <option value="journee scientifique" selected>
-                journee scientifique
+              <option value="journée scientifique" selected>
+                journée scientifique
               </option>
-              <option value="voyage organise">voyage organise</option>
+              <option value="voyage organisé">voyage organisé</option>
               <option value="ceremoine d'honneur">ceremoine d'honneur</option>
               <option value="tournoi sportif">tournoi sportif</option>
               <option value="autre">autre</option>
@@ -135,7 +135,7 @@
             <span class="error"></span>
           </div>
           <div class="form-control">
-            <label for="OActivites">si cliquez sur autre</label>
+            <label for="OActivites">autre</label>
             <input
               type="text"
               placeholder="Qu'est-ce que tu aimes?"
@@ -191,12 +191,15 @@
               <option value="IP" selected>IP</option>
               <option value="IAR">IAR</option>
               <option value="SFSC">SFSC</option>
+              <option value="IND">IND</option>
+              <option value="SF">SF</option>
+              <option value="ISUSI">ISUSI</option>
             </select>
             <span class="error"></span>
           </div>
         </div>
         <button class="btn submit">submit</button>
-        <button class="btn show" id="send" onclick="showPDF()">send</button>
+        <button class="btn show" id="send" onclick="showPDF()">print</button>
       </form>
     </section>
 
