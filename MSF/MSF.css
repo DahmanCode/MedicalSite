@@ -185,7 +185,7 @@ body {
 
 .Membership form button:last-child {
   /* margin-top: 0; */
-  margin-left: 1.5rem;
+  /* margin-left: 1.5rem; */
   background: var(--blue);
   transition: .5s;
 }
@@ -386,6 +386,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .container_pdf {
+    height: 100vh;
+  }
 
   .Membership form {
     margin: 0 8rem 5rem;
@@ -423,7 +426,7 @@ body {
   
   .pdf h1 {
     font-size: 1.8rem;
-    padding: 2rem 4rem 0 ;
+    padding: 8rem 4rem 0 ;
   }
   
   .pdf .elelments {
@@ -473,7 +476,7 @@ body {
   
   .pdf h1 {
     font-size: 1.4rem;
-    padding:2rem 1rem 0 ;
+    padding: 12rem 1rem 0 ;
   }
   
   .pdf .elelments {
