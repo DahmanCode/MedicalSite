@@ -386,10 +386,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .container_pdf {
-    height: 100vh;
-  }
-
   .Membership form {
     margin: 0 8rem 5rem;
   }
@@ -407,6 +403,10 @@ body {
   }
 
   /* PDF */
+
+  .container_pdf {
+    height: 100vh;
+  }
 
   .pdf .logo {
     margin: 2rem;
@@ -444,6 +444,10 @@ body {
   
   .pdfBtn button {
     margin-right: 1.5rem;
+  }
+
+  .time span {
+    font-size: 1rem;
   }
 }
 
