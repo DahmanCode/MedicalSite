@@ -130,9 +130,6 @@ function generatePDF() {
   pdf.style.width = '800px';
   pdf.style.height = '1000px';
   var opt = {
-    // jsPDF: {
-    //   format: 'a4'
-    // },
     margin: [0, 1],
     filename: `${name_file}.pdf`,
     image: { type: 'jpeg', quality: 0.98 },
