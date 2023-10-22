@@ -233,7 +233,11 @@ section:last-of-type {
 
   .home {
     height: 100rem;
-    padding-top: 8rem;
+    padding-top: 5rem;
+  }
+
+  .home .content h3 {
+    font-size: 2.8rem;
   }
 }
 
