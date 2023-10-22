@@ -158,7 +158,8 @@ section:last-of-type {
 }
 
 .statistics h1 {
-  color: transparent;
+  /* color: transparent; */
+  text-align: center;
   font-size: 5rem;
   color: #fff;
   margin-bottom: 6rem;
